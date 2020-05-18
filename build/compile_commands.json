@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/wynnenicholas/OneDrive - Florida State University/Projects/GameDevelopment/SMFL_State_Machine/build",
+  "command": "/usr/bin/clang++   -isystem /usr/local/include  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -std=gnu++14 -o CMakeFiles/SM.dir/test.cpp.o -c \"/Users/wynnenicholas/OneDrive - Florida State University/Projects/GameDevelopment/SMFL_State_Machine/test.cpp\"",
+  "file": "/Users/wynnenicholas/OneDrive - Florida State University/Projects/GameDevelopment/SMFL_State_Machine/test.cpp"
+}
+]

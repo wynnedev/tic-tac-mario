@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(SFML_State_Machine)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+find_package(SFML 2 REQUIRED network audio graphics window system)
+add_executable(SM test.cpp game.cpp statemachine.cpp inputmanager.cpp assetmanager.cpp splashstate.cpp mainmenustate.cpp)
+message(STATUS ${SFML_INCLUDE_DIR})
+
+target_link_libraries(SM sfml-graphics )
+
+
