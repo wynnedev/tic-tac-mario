@@ -7,6 +7,6 @@ find_package(SFML 2 REQUIRED network audio graphics window system)
 add_executable(SM test.cpp game.cpp statemachine.cpp inputmanager.cpp assetmanager.cpp splashstate.cpp mainmenustate.cpp)
 message(STATUS ${SFML_INCLUDE_DIR})
 
-target_link_libraries(SM sfml-graphics )
+target_link_libraries(SM sfml-graphics sfml-audio )
 
 

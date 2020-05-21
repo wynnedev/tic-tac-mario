@@ -27,6 +27,7 @@ namespace SSM{
         sf::Sprite _playButton;
         sf::Sprite _playButtonOuter;
         sf::Sprite _title;
+        sf::Sound _sound;
     };
 }
 

@@ -5,7 +5,7 @@ namespace SSM
 {
     Game::Game( int width, int height, std::string title)
     {
-        _data->window.create( sf::VideoMode(  width, height), title, sf::Style::Close | sf::Style::Titlebar);
+        _data->window.create( sf::VideoMode( width, height ), title, sf::Style::Close | sf::Style::Titlebar);
         //Should add the initial state otherwise errors
         _data->machine.AddState(StatePtr(new SplashState(this->_data)));
         this->Run();

@@ -8,12 +8,14 @@ namespace SSM{
         {
             sf::IntRect tempRect( object.getPosition().x, object.getPosition().y, object.getGlobalBounds().width, object.getGlobalBounds().height);
 
-            if( tempRect.contains( sf::Mouse::getPosition())){
+            if( tempRect.contains( sf::Mouse::getPosition()))
+            {
                 return true;
-            }
-            return false;
-        }
+            }  
+        }          
+        return false;
     }
+
 
     sf::Vector2i InputManager::GetMousePosition( sf::RenderWindow& window)
     {

@@ -190,6 +190,7 @@ SM: CMakeFiles/SM.dir/splashstate.cpp.o
 SM: CMakeFiles/SM.dir/mainmenustate.cpp.o
 SM: CMakeFiles/SM.dir/build.make
 SM: /usr/local/lib/libsfml-graphics.2.5.1.dylib
+SM: /usr/local/lib/libsfml-audio.2.5.1.dylib
 SM: /usr/local/lib/libsfml-window.2.5.1.dylib
 SM: /usr/local/lib/libsfml-system.2.5.1.dylib
 SM: CMakeFiles/SM.dir/link.txt

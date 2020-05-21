@@ -9,6 +9,7 @@
 
 #include <map>
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
 namespace SSM{
     class AssetManager{
@@ -48,6 +49,22 @@ namespace SSM{
              */
             sf::Font &GetFont(std::string name);
 
+            /**
+             * @brief Load an audio file
+             * 
+             * @param name the name of the audio object key
+             * @param file  file name map data
+             */
+            void LoadSound( std::string name, std::string file);
+
+                        /**
+             * @brief Get the Font object from map using key
+             * 
+             * @param name the name of the font object
+             * @return sf::SoundBuffer& 
+             */
+            sf::SoundBuffer &GetSoundBuffer(std::string name);
+
         private:
             /**
              * @brief _textures map data
@@ -60,6 +77,12 @@ namespace SSM{
              * 
              */
             std::map<std::string, sf::Font> _fonts;
+
+            /**
+             * @brief _sounds map data
+             * 
+             */
+            std::map<std::string, sf::SoundBuffer> _sounds;
     };
 }
 #endif

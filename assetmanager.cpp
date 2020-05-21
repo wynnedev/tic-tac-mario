@@ -25,4 +25,19 @@ namespace SSM{
     sf::Font &AssetManager::GetFont(std::string name){
         return this->_fonts.at( name );
     }
+
+    void AssetManager::LoadSound(std::string name, std::string file)
+    {
+        sf::SoundBuffer buffer;
+
+        if(buffer.loadFromFile(file))
+        {
+            this->_sounds[name] = buffer;
+        }
+    }
+
+    sf::SoundBuffer &AssetManager::GetSoundBuffer(std::string name)
+    {
+        return this->_sounds.at( name );
+    }
 }
